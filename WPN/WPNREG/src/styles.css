@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+.form-group>input{
+    font-weight: bolder;
+}
+.form-group>label{
+    font-weight: lighter;
+}
+
+button[type="submit"]{
+    background-color: #67dfd4;
+    color: #fff;
+
+}
+table tr:hover{
+    color:greenyellow;
+    cursor: pointer;
+}
+
+input.ng-touched.ng-invalid{
+    border-color: #dc3545;
+}
+div.validation-error{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+.text-center, .form-group
+{
+    color:white;
+
+}
+body
+{
+    background-image:url('http://images6.fanpop.com/image/photos/35400000/Gun-Wallpaper-random-35479544-1440-815.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+.table
+{
+    color:white;
+
+}
+tr:hover
+{
+    color:greenyellow;
+}

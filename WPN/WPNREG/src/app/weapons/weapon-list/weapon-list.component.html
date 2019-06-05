@@ -1,0 +1,10 @@
+<table class="table table-hover">
+  <tr *ngFor="let wpn of service.list">
+    <td (click)="populateForm(wpn)">[{{wpn.WPN_ID}}]-{{wpn.Manufacturer}}</td>
+    <td (click)="populateForm(wpn)">{{wpn.Model}}</td>
+    <td (click)="populateForm(wpn)">{{wpn.Serial_number}}</td>
+    <td (click)="populateForm(wpn)">{{wpn.Accuracy}}</td>
+    <td (click)="populateForm(wpn)">{{wpn.Wpn_Caliber}}</td>
+    <td><button (click)="onDelete(wpn.WPN_ID)" class="btn btn-sm btn-outline-danger">X</button></td>
+  </tr>
+</table>

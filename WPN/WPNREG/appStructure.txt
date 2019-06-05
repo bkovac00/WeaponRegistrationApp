@@ -1,0 +1,17 @@
+● src
++---● app
+|   +--● weapons
+|   |  |--weapons.component.ts|.html|.css
+|   |  +--● weapon
+|   |  |  |--weapon.component.ts|.html|.css
+|   |  |
+|   |  +--● weapon-list
+|   |  |  |--weapon-list.component.ts|.html|.css
+|   |  |
+|   |  +--● shared
+|   |     |--weapon.service.ts
+|   |     |--weapon.model.ts
+|   |
+|   |--app.module.ts
+|
+|--index.html (cdn path for bootstrap)
