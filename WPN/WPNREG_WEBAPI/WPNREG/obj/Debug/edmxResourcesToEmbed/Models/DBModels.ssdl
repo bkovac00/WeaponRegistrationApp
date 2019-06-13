@@ -11,7 +11,27 @@
     <Property Name="Accuracy" Type="int" />
     <Property Name="Wpn_Caliber" Type="varchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="WeaponMaster">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LoginName" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="ContactNo" Type="varchar" MaxLength="15" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="IsApporved" Type="int" />
+    <Property Name="Status" Type="int" />
+    <Property Name="TotalCnt" Type="int" />
+  </EntityType>
+  <Function Name="WeaponLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
   <EntityContainer Name="WPN_DBModelStoreContainer">
     <EntitySet Name="Weapon" EntityType="Self.Weapon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WeaponMaster" EntityType="Self.WeaponMaster" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

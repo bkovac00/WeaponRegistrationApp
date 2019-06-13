@@ -1,29 +1,29 @@
-<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
-  <div class="form-group">
-    <label>MANUFACTURER</label>
+<form id=form1 #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+  <div id=div1 class="form-group">
+    <label id=manufacturer>MANUFACTURER</label>
     <input name="Manufacturer" #Manufacturer="ngModel" [(ngModel)]="service.formData.Manufacturer" class="form-control">
     <div class="validation-error" *ngIf="Manufacturer.invalid && Manufacturer.touched">This field must be full!</div>
   </div>
   <div class="form-group">
-      <label>MODEL</label>
+      <label id=model>MODEL</label>
       <input name="Model" #Model="ngModel" [(ngModel)]="service.formData.Model" class="form-control">
       <div class="validation-error" *ngIf="Model.invalid && Model.touched">This field must be full!</div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label>SERIAL NUMBER</label>
+        <label id=serial>SERIAL NUMBER</label>
         <input name="Serial_number" #Serial_number="ngModel" [(ngModel)]="service.formData.Serial_number" class="form-control">
         <div class="validation-error" *ngIf="Serial_number.invalid && Serial_number.touched">This field must be full!</div>
       </div>
       <div class="form-group col-md-6">
-          <label>ACCURACY</label>
+          <label id=accuracy>ACCURACY</label>
           <input name="Accuracy" #Accuracy="ngModel" [(ngModel)]="service.formData.Accuracy" class="form-control">
           <div class="validation-error" *ngIf="Accuracy.invalid && Accuracy.touched">This field must be full!</div>
         </div>
         
      </div>
      <div class="form-group">
-      <label>CALIBER</label>
+      <label id=caliber>CALIBER</label>
       <input name="Wpn_Caliber" #Wpn_Caliber="ngModel" [(ngModel)]="service.formData.Wpn_Caliber" class="form-control">
       <div class="validation-error" *ngIf="Wpn_Caliber.invalid && Wpn_Caliber.touched">This field must be full!</div>
     </div>
