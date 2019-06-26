@@ -8,39 +8,11 @@ import { WeaponsComponent } from './weapons/weapons.component';
 import { WeaponComponent } from './weapons/weapon/weapon.component';
 import { WeaponListComponent } from './weapons/weapon-list/weapon-list.component';
 import { WeaponService } from './shared/weapon.service';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-export const routes: Routes = [    
-  {    
-    path: '',    
-    redirectTo: 'login',    
-    pathMatch: 'full',    
-  },    
-  {    
-    path: 'login',    
-    component: LoginComponent,    
-    data: {    
-      title: 'Login Page'    
-    }    
-  },    
-  {    
-    path: 'Dasboard',    
-    component: DashboardComponent,    
-    data: {    
-      title: 'Dashboard Page'    
-    }    
-  },    
-  {    
-    path: 'AddUser',    
-    component: RegisterComponent,    
-    data: {    
-      title: 'Add User Page'    
-    }    
-  },    
-];    
+
+  
+    
 
 @NgModule({
   declarations: [
@@ -48,20 +20,19 @@ export const routes: Routes = [
     WeaponsComponent,
     WeaponComponent,
     WeaponListComponent,
-    LoginComponent,
-    RegisterComponent,
-    DashboardComponent
+  
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    ToastrModule.forRoot(),
-    RouterModule.forRoot(routes)
+    ToastrModule.forRoot()
   ],
   providers: [WeaponService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 export class AppRoutingModule { }
+

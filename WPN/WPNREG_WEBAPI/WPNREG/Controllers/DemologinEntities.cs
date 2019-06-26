@@ -4,7 +4,7 @@ namespace WPNREGS.Controllers
 {
     internal class DemologinEntities
     {
-        public object WeaponMasters { get; internal set; }
+        public object WeaponMasters { get; internal set; }//!!!!!!!!!!!nastavit funkcionalnost idodat metodu add
 
         internal object Usp_Login(string userName, string password)
         {
