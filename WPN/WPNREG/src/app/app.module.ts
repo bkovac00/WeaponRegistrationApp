@@ -10,6 +10,9 @@ import { WeaponListComponent } from './weapons/weapon-list/weapon-list.component
 import { WeaponService } from './shared/weapon.service';
 import { Routes, RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserService } from './shared/user.service';
 
   
     
@@ -20,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     WeaponsComponent,
     WeaponComponent,
     WeaponListComponent,
+    SignUpComponent,
   
     
   ],
@@ -28,9 +32,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
-  providers: [WeaponService],
+  providers: [WeaponService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

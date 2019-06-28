@@ -58,3 +58,17 @@ tr:hover
 {
     size: 50px;
 }
+div.sm-jumbotron{
+    margin: 0px;
+    padding: 2rem;
+    color: #ff0000;
+    
+}
+ 
+button.btn-submit{
+    color: #fff;
+    width: 100%;
+}
+button.btn-submit:focus,button.btn-submit:hover{
+    background-color: #38547b;
+}
