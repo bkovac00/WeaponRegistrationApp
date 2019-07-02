@@ -142,6 +142,8 @@ C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNRE
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Antlr3.Runtime.dll
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\EntityFramework.dll
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\EntityFramework.SqlServer.dll
+C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.Web.Infrastructure.dll
@@ -162,6 +164,8 @@ C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNRE
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\WebGrease.dll
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\EntityFramework.xml
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\EntityFramework.SqlServer.xml
+C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\System.Net.Http.Formatting.xml
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\System.Web.Http.xml
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\System.Web.Http.Cors.xml
@@ -183,7 +187,3 @@ C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNRE
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\obj\Debug\WPNREG.csproj.CopyComplete
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\obj\Debug\WPNREG.dll
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\obj\Debug\WPNREG.pdb
-C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.Identity.EntityFramework.xml

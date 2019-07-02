@@ -12,8 +12,6 @@ namespace WPNREG.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    using System.Data.Entity.Core.Objects;
-    using System.Linq;
     
     public partial class DBModel : DbContext
     {
@@ -27,20 +25,8 @@ namespace WPNREG.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Login> Login { get; set; }
+        public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<Weapon> Weapon { get; set; }
-        public virtual DbSet<WeaponMaster> WeaponMaster { get; set; }
-    
-        public virtual ObjectResult<WeaponLogin_Result> WeaponLogin(string userName, string password)
-        {
-            var userNameParameter = userName != null ?
-                new ObjectParameter("UserName", userName) :
-                new ObjectParameter("UserName", typeof(string));
-    
-            var passwordParameter = password != null ?
-                new ObjectParameter("Password", password) :
-                new ObjectParameter("Password", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<WeaponLogin_Result>("WeaponLogin", userNameParameter, passwordParameter);
-        }
     }
 }

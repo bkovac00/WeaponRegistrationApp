@@ -1,48 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="WPN_DBModelStoreContainer" CdmEntityContainer="DBModel">
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="WPN_DBModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="USR_ID" ColumnName="USR_ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="WPN_DBModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="USR_ID" ColumnName="USR_ID" />
+          <ScalarProperty Name="DB_User" ColumnName="DB_User" />
+          <ScalarProperty Name="DB_Admin" ColumnName="DB_Admin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Weapon">
       <EntityTypeMapping TypeName="WPN_DBModel.Weapon">
         <MappingFragment StoreEntitySet="Weapon">
-          <ScalarProperty Name="Wpn_Caliber" ColumnName="Wpn_Caliber" />
-          <ScalarProperty Name="Accuracy" ColumnName="Accuracy" />
-          <ScalarProperty Name="Serial_number" ColumnName="Serial_number" />
-          <ScalarProperty Name="Model" ColumnName="Model" />
-          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
           <ScalarProperty Name="WPN_ID" ColumnName="WPN_ID" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Serial_number" ColumnName="Serial_number" />
+          <ScalarProperty Name="Accuracy" ColumnName="Accuracy" />
+          <ScalarProperty Name="Wpn_Caliber" ColumnName="Wpn_Caliber" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="WeaponMaster">
-      <EntityTypeMapping TypeName="WPN_DBModel.WeaponMaster">
-        <MappingFragment StoreEntitySet="WeaponMaster">
-          <ScalarProperty Name="TotalCnt" ColumnName="TotalCnt" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="IsApporved" ColumnName="IsApporved" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="WeaponLogin" FunctionName="WPN_DBModel.Store.WeaponLogin">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="WPN_DBModel.WeaponLogin_Result">
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="IsApporved" ColumnName="IsApporved" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

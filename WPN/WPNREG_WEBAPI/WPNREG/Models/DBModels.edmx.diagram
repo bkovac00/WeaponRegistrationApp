@@ -4,9 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3a2055ff68e846e78ea82aa6c2633758" Name="Diagram1">
-        <EntityTypeShape EntityType="WPN_DBModel.Weapon" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="WPN_DBModel.WeaponMaster" Width="1.5" PointX="3.375" PointY="0.75" />
+      <Diagram DiagramId="a892b2e70c7346fcac931b06e172514d" Name="Diagram1">
+        <EntityTypeShape EntityType="WPN_DBModel.Login" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WPN_DBModel.Roles" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WPN_DBModel.Weapon" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

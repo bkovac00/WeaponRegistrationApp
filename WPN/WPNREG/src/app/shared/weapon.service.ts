@@ -29,13 +29,13 @@ readonly rootURL ="http://localhost:53691/api"
     
     return this.http.put(this.rootURL+'/Weapon/'+formData.WPN_ID,formData);
      
-   }
+  }
 
-   deleteWeapon(id : number){
+  deleteWeapon(id : number){
     return this.http.delete(this.rootURL+'/Weapon/'+id);
-   }
+  }
 
-   getWeapons() {
+  getWeapons() {
     return this.http.get(this.rootURL + '/Weapon');
   }
 }

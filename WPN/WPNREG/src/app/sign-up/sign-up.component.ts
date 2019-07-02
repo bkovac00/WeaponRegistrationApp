@@ -10,10 +10,8 @@ import { ToastrService } from 'ngx-toastr'
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-  user: User;
-  emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
- 
-  constructor(private userService: UserService, private toastr: ToastrService) { }
+  
+  constructor(public service: UserService, private toastr: ToastrService) { }
  
   ngOnInit() {
     this.resetForm();
@@ -22,25 +20,36 @@ export class SignUpComponent implements OnInit {
   resetForm(form?: NgForm) {
     if (form != null)
       form.reset();
-    this.user = {
-      UserName: '',
-      Password: '',
-      Email: '',
-      FirstName: '',
-      LastName: ''
+      this.service.formData={
+        USR_ID: null,
+        UserName: '',
+        Password: '',
+        Email: '',
+        FirstName: '',
+        LastName: ''
     }
   }
- 
-  OnSubmit(form: NgForm) {
-    this.userService.registerUser(form.value)
-      .subscribe((data: any) => {
-        if (data.Succeeded == true) {
-          this.resetForm(form);
-          this.toastr.success('User registration successful');
-        }
+    onSubmit(form:NgForm){
+      if(form.value.USR_ID==null)
+        this.insertRecord(form);
         else
-          this.toastr.error(data.Errors[0]);
+        this.updateRecord(form);
+    }
+    insertRecord(form:NgForm){
+      //console.log(this.service.formData);
+      this.service.postUser(form.value).subscribe(res =>{
+        this.toastr.success('Inserted succesfully','USR. Register')
+        this.resetForm(form);
+        this.service.refreshList();
+        //console.log();
       });
-  }
- 
+    }
+    updateRecord(form:NgForm){
+      //console.log(this.service.formData);
+      this.service.putUser(form.value).subscribe(res=>{
+        this.toastr.info('Updated Sucessfully','USR. Register');
+        this.resetForm(form);
+        this.service.refreshList();
+      });
+    }
 }
