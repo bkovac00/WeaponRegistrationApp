@@ -1,19 +1,14 @@
 
-  <app-navbar></app-navbar>
-  <app-home></app-home>
-  <app-about></app-about>
-  <app-contact></app-contact>  
-  
-<div class="container">
-  <app-sign-up></app-sign-up>
-</div>
-
-<div class="container">
-  <app-weapons></app-weapons>
-</div>
-
-<app-footer></app-footer> 
-  
+<app-navbar>
+  <a routerLink="/home" routerLinkActive="active">HOME</a>
+  <a routerLink="/sign-up" routerLinkActive="active">SIGN-UP</a>
+  <a routerLink="/container1" routerLinkActive="active">ABOUT</a>
+  <a routerLink="/container2" routerLinkActive="active">CONTACT</a>
+</app-navbar>
+<router-outlet></router-outlet>
+<div id=footer>
+  <app-footer></app-footer> 
+</div>  
   
 
 

@@ -10,19 +10,18 @@ import { WeaponComponent } from './weapons/weapon/weapon.component';
 import { WeaponListComponent } from './weapons/weapon-list/weapon-list.component';
 import { WeaponService } from './shared/weapon.service';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserService } from './shared/user.service';
 import { NavbarComponent } from './template/navbar/navbar.component';
-import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './template/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule,Routes } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './pages/home/home.component';
 
 
-  
-    
 
 @NgModule({
   declarations: [
@@ -32,10 +31,10 @@ import { RouterModule } from '@angular/router';
     WeaponListComponent,
     SignUpComponent,
     NavbarComponent,
-    HomeComponent,
     FooterComponent,
     AboutComponent,
     ContactComponent,
+    HomeComponent,
     
   
     
@@ -47,6 +46,8 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
+    AppRoutingModule
+    
    
   ],
   providers: [WeaponService,UserService],
