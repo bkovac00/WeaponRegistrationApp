@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { WeaponsComponent } from './weapons/weapons.component';
   
 const routes: Routes = [  
+{path: '',component:HomeComponent},
 {path: 'home',component:HomeComponent},
 {path: 'weapons',component:WeaponsComponent},
 {path: 'sign-up',component: SignUpComponent},  

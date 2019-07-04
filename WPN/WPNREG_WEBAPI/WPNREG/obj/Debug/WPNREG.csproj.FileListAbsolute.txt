@@ -182,8 +182,8 @@ C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNRE
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\obj\Debug\WPNREG.csprojAssemblyReference.cache
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\obj\Debug\WPNREG.csproj.CoreCompileInputs.cache
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\obj\Debug\WPNREG.csproj.CopyComplete
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\obj\Debug\WPNREG.dll
 C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\obj\Debug\WPNREG.pdb
+C:\Users\bkovacic\Documents\GitHub\WeaponRegistrationApp\WPN\WPNREG_WEBAPI\WPNREG\obj\Debug\WPNREG.csprojAssemblyReference.cache

@@ -17,9 +17,10 @@ export class SignUpComponent implements OnInit {
     this.resetForm();
   }
  
-  resetForm(form?: NgForm) {
+  resetForm(form ?: NgForm) {
     if (form != null)
       form.reset();
+
       this.service.formData={
         USR_ID: null,
         UserName: '',

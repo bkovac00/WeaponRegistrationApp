@@ -61,7 +61,7 @@ namespace WPNREG.Controllers
 
         // POST: api/Login
         [ResponseType(typeof(Login))]
-        public IHttpActionResult PostWLogin(Login login)
+        public IHttpActionResult PostLogin(Login login)
         {
             if (!ModelState.IsValid)
             {

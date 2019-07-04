@@ -1,4 +1,23 @@
-<form id=form1 #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+
+<!--<form id=form2 #form2="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+  <div id=div1 class="form-group1">
+    <label id=username1>USERNAME</label>
+    <input name="UserName1" #UserName="ngModel" [(ngModel)]="service.formData" class="form-control">
+    <div class="validation-error" *ngIf="UserName1.invalid && UserName1.touched">This field must be full!</div>
+  </div>
+  <div class="form-group">
+      <label id=password1>PASSWORD</label>
+      <input name="Password1" #Password="ngModel" [(ngModel)]="service.formData.Password" class="form-control">
+      <div class="validation-error" *ngIf="Password1.invalid && UserName1.touched">This field must be full!</div>
+    </div>
+   
+     <div class="form-group1">
+          <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">LOGIN</button>
+      </div>
+</form>-->
+<a id=text2>Or just simply register if you dont have an account already</a>
+
+<form id=form3 #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
   <div id=div1 class="form-group">
     <label id=username>USERNAME</label>
     <input name="UserName" #UserName="ngModel" [(ngModel)]="service.formData.UserName" class="form-control">
@@ -30,4 +49,4 @@
      <div class="form-group">
           <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">SUBMIT</button>
         </div>
-</form>
+      </form>

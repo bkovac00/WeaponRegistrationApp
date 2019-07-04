@@ -1,5 +1,16 @@
-#form1{
+#form3{
     padding:50px;
     padding-left: 500px;
     padding-right: 500px;
+}
+#form2{
+    padding:50px;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+#text2{
+    color: white;
+    padding-left: 500px;
+    padding-right: 500px;
+    font-size: 35px;
 }

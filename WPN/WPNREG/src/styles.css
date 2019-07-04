@@ -32,9 +32,11 @@ div.validation-error{
 }
 body
 {
+    position: relative;
     background-image:url('http://images6.fanpop.com/image/photos/35400000/Gun-Wallpaper-random-35479544-1440-815.jpg');
     background-repeat:no-repeat;
     background-size:cover;
+    
 }
 
 
@@ -64,6 +66,4 @@ div.sm-jumbotron{
     color: #ff0000;
     
 }
- 
-
 

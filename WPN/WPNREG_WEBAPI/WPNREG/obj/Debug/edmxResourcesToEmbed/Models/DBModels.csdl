@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="USR_ID" />
     </Key>
-    <Property Name="USR_ID" Type="Int32" Nullable="false" />
+    <Property Name="USR_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />

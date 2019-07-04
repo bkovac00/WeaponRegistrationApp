@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="USR_ID" />
     </Key>
-    <Property Name="USR_ID" Type="int" Nullable="false" />
+    <Property Name="USR_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="UserName" Type="varchar" MaxLength="50" />
     <Property Name="Password" Type="varchar" MaxLength="50" />
     <Property Name="Email" Type="varchar" MaxLength="50" />
