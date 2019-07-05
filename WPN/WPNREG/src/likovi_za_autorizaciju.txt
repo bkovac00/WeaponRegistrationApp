@@ -1,0 +1,5 @@
+https://stackblitz.com/edit/angular-7-jwt-authentication-example?file=app%2F_helpers%2Fjwt.interceptor.ts
+
+https://jasonwatmore.com/post/2018/11/16/angular-7-jwt-authentication-example-tutorial
+
+https://github.com/dvsekhvalnov/jose-jwt

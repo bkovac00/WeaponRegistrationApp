@@ -34,7 +34,8 @@ import { HomeComponent } from './pages/home/home.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent,
+    HomeComponent
+ 
     
   
     
